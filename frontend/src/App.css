@@ -1,0 +1,90 @@
+.drop-zone-container {
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adding space between drop zones */
+  justify-content: center; /* Center align drop zones horizontally */
+}
+
+.drop-zone {
+  margin: 20px; /* Reduce margin for tighter spacing */
+  width: 8cm; /* Increasing size to 5x5 cm */
+  height: 5cm;
+  border: 2px solid lightblue; /* Changing border color to light blue */
+  border-radius: 20px; /* Increasing border radius */
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Aligning logo and text vertically */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.drop-zone input[type="file"] {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.drop-zone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px; /* Adding round borders to images */
+}
+
+.drop-zone p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+h1,h3{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center; /* Center align the text */
+}
+
+.submit-button {
+  display: block;
+  margin: 30px auto; /* Center align the button horizontally and reduce margin */
+  padding: 10px 20px; /* Add padding for spacing */
+  background-color: #0d6dce; /* Dark blue background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove default button border */
+  border-radius: 25px; /* Add border-radius for rounded corners */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #00264d; /* Darker blue color on hover */
+}
+
+.result-block {
+  margin-top: 50px; /* Add margin top to separate from submit button */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f0f0f0; /* Light grey background color */
+  border-radius: 50px; /* Add border-radius for rounded corners */
+  text-align: center; /* Center align text */
+}
+
+.result-block h2 {
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+}
+
+.result-block p {
+  margin: 0; /* Remove default margin */
+}
+
+
